@@ -1,30 +1,66 @@
-# Shopify App Node
+# Shopify App Starter
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.com/Shopify/shopify-app-node.svg?branch=master)](https://travis-ci.com/Shopify/shopify-app-node)
 
 Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://nextjs.org/), [Shopify-koa-auth](https://github.com/Shopify/quilt/tree/master/packages/koa-shopify-auth), [Polaris](https://github.com/Shopify/polaris-react), and [App Bridge React](https://shopify.dev/tools/app-bridge/react-components).
 
+## Prerequisites
+
+- [Create a Shopify partner account](https://partners.shopify.com/signup).
+- [Create a Development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) where you can install and test your app.
+
 ## Installation
 
-Using the [Shopify-App-CLI](https://github.com/Shopify/shopify-app-cli) run:
+- [Node.js](https://nodejs.org) latest installed.
+- Install [ngrok](https://ngrok.com/) in your environment and log in on browser 
+- Install [Shopify App CLI](https://shopify.dev/tools/cli)
 
-```sh
-~/ $ shopify create project APP_NAME
-```
+  ```bash
+  # Using homebrew on macOS
+  brew tap shopify/shopify
+  brew install shopify-cli
+  ```
 
-Or, fork and clone repo
+  After the installation has completed, run `shopify version` to verify the installation was successful.
 
-## Requirements
+## Use starter code
 
-- If you don’t have one, [create a Shopify partner account](https://partners.shopify.com/signup).
-- If you don’t have one, [create a Development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) where you can install and test your app.
-- In the Partner dashboard, [create a new app](https://help.shopify.com/en/api/tools/partner-dashboard/your-apps#create-a-new-app). You’ll need this app’s API credentials during the setup process.
+- Clone repo (or fork)
 
-## Usage
+  ```bash
+  git clone https://github.com/hta218/shopify-app-starter.git && cd shopify-app-starter
+  ```
 
-This repository is used by [Shopify-App-CLI](https://github.com/Shopify/shopify-app-cli) as a scaffold for Node apps. You can clone or fork it yourself, but it’s faster and easier to use Shopify App CLI, which handles additional routine development tasks for you.
+- Open it on your **IDE**
+
+  ```bash
+  # For VSCode user
+  code .
+  ```
+
+- Connect starter to a specific Shopify development store.
+
+  ```bash
+  shopify connect
+  ```
+
+  The `connect` command re-creates the project's `.env` and `.shopify-cli.yml` files if they don't exist, or updates the files if they do exist.
+
+  Follow the CLI instruction then check `.env` file to make sure it has correct credential info
+
+- Start development server
+
+  ```bash
+  shopify serve
+  ```
+
+  - Follow the *ngrok* URL to install and start using the app in your development store
+
+  - The *ngrok* URL should redirect to your Shopify admin app dashboard. Click **Install** and wait for a few second to load and render your app
 
 ## License
 
 This respository is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+Copyright © 2021 - Leo @ https://leohuynh.dev

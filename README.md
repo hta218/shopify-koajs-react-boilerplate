@@ -55,9 +55,9 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
   shopify serve
   ```
 
-  - Follow the **ngrok URL** to install and start using the app in your development store
+  - Follow the **ngrok URL** shown in the terminal to install and start using the app in your development store
 
-  - The **ngrok URL** should redirect to your Shopify admin app dashboard. Click **Install** and wait for a few second to load and render your app
+  - The **ngrok URL** should redirect to your Shopify admin app dashboard. Click **Install** and wait for a few seconds to load and render your app
 
 ## License
 

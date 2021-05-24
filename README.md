@@ -57,9 +57,8 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
 
 - Install app (only 1 time)
 
-  - Skip this step if you already did previously
-
   ```bash
+  # Skip this if you already did before
   shopify serve
   ```
 

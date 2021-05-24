@@ -38,6 +38,12 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
   # For VSCode user
   code .
   ```
+	
+- Install dependencies
+  ```bash
+  yarn
+  # Or npm install
+  ```
 
 - Connect starter to a specific Shopify development store.
 
@@ -49,7 +55,9 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
 
   Follow the CLI instruction then check `.env` file to make sure it has correct credential info
 
-- Start development server
+- Install app (only 1 time)
+
+  - Skip this step if you already did previously
 
   ```bash
   shopify serve
@@ -58,6 +66,14 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
   - Follow the **ngrok URL** shown in the terminal to install and start using the app in your development store
 
   - The **ngrok URL** should redirect to your Shopify admin app dashboard. Click **Install** and wait for a few seconds to load and render your app
+
+- Start development server
+
+  ```bash
+  yarn dev
+  ```
+
+  Open app from your Shopify admin apps dashboard and start develop your app
 
 ## License
 

@@ -63,4 +63,4 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
 
 This respository is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-Copyright © 2021 - Leo @ https://leohuynh.dev
+Copyright © 2021 - Leo @ [https://leohuynh.dev](https://leohuynh.dev)

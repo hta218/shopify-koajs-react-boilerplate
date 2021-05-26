@@ -24,6 +24,8 @@ Boilerplate to create an embedded Shopify app made with Node, [Next.js](https://
 
   After the installation has completed, run `shopify version` to verify the installation was successful.
 
+- **[Optional]** Install [Shopify GraphiQL App](https://shopify-graphiql-app.shopifycloud.com/login) on your **Development store** - This tool will help you to identify and manage the Shopify GraphQL Admin APIs upon set up
+
 ## Use starter code
 
 - Clone repo (or fork)

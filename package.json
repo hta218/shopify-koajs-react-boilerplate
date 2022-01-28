@@ -1,0 +1,21 @@
+{
+	"name": "shopify-koajs-react-app",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/hta218/shopify-koajs-react-app.git",
+	"author": "Leo",
+	"license": "MIT",
+	"scripts": {
+		"set-up": "(yarn); (cd server && yarn); (cd client && yarn)",
+		"start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+		"start-server": "cd server && npm run dev",
+		"start-client": "cd client && npm start",
+		"start-prod": "cd server && npm start",
+		"build": "cd client && npm run build && cd .. && npm run move-to-server",
+		"move-to-server": "rm -rf ./server/build && mv ./client/build ./server/build"
+	},
+	"devDependencies": {
+		"concurrently": "^6.2.0"
+	},
+	"dependencies": {}
+}

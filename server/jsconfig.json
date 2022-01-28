@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+    "baseUrl": ".",
+		"moduleResolution": "node",
+    "paths": {
+			"*": ["node_modules/*"],
+      "@admin/*": ["./admin/*"],
+      "@db/*": ["./db/*"],
+      "@constants/*": ["./constants/*"],
+      "@models/*": ["./models/*"],
+      "@api/*": ["./api/*"],
+      "@middlewares/*": ["./middlewares/*"],
+      "@utilities/*": ["./utilities/*"],
+    },
+  },
+	"include": ["./**/*"]
+}

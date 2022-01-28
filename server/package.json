@@ -1,0 +1,41 @@
+{
+  "name": "shopify-koajs-react-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@shopify/koa-shopify-auth": "^4.1.3",
+    "@shopify/shopify-api": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-respond": "^2.1.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.12.13",
+    "shopify-api-node": "^3.6.12"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.1",
+    "nodemon": "^2.0.7"
+  },
+  "_moduleAliases": {
+    "@admin": "./admin",
+    "@db": "./db",
+    "@constants": "./constants",
+    "@models": "./models",
+    "@api": "./api",
+    "@middlewares": "./middlewares",
+    "@utilities": "./utilities"
+  }
+}

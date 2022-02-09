@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
 **Production-ready** boilerplate to create a Shopify node app made with [Koa.js](https://koajs.com/), [Shopify-koa-auth](https://github.com/Shopify/quilt/tree/master/packages/koa-shopify-auth), [JSON web token](https://jwt.io/), [MongoDB](https://www.mongodb.com
-) with [Mongoose](https://mongoosejs.com/), and [React](https://reactjs.org/) with [Polaris](https://github.com/Shopify/polaris-react).
+) with [Mongoose](https://mongoosejs.com/) ORM, and [React](https://reactjs.org/) with [Polaris](https://github.com/Shopify/polaris-react).
 
 ## First things first
 
@@ -24,9 +24,9 @@ Since this [tutorial](https://shopify.dev/apps/getting-started/create) ([Link be
 
 ## Installation
 
-- Install and start MongoDB: https://www.mongodb.com/blog/post/mongodbs-official-brew-tap-now-open-and-flowing
+- [Install and start MongoDB](https://www.mongodb.com/blog/post/mongodbs-official-brew-tap-now-open-and-flowing)
 
-- Clone repo
+- Clone the repo
 	```bash
 	git clone https://github.com/hta218/shopify-koajs-react-app.git && cd shopify-koajs-react-app
 	```
@@ -37,9 +37,9 @@ Since this [tutorial](https://shopify.dev/apps/getting-started/create) ([Link be
 	# or yarn set-up
 	```
 
-- Inside `/server` directory, create `.env` with all credentials from your private app that you have created in the above step (Take a look at `.env.example` for the template)
+- Inside `/server` directory, create `.env` file with all credentials from your private app that you have created in the above step (Take a look at `.env.example` for the template)
 
-- Start project
+- Start app
 	```bash
 	npm start
 	```
